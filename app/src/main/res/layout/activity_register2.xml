@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Register2">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Langkah Selanjutnya"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_black"
+        />
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="verifikasi data"
+        android:fontFamily="@font/poppins_thin"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCard"
+        app:layout_constraintTop_toBottomOf="@id/subTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:circularflow_radiusInDP="25dp"
+        android:layout_marginTop="25dp"
+        android:hint="Nomor Induk KTP"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:startIconDrawable="@drawable/ic_baseline_card_membership_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idText"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama"
+        app:layout_constraintTop_toBottomOf="@id/idCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:circularflow_radiusInDP="25dp"
+        android:layout_marginTop="25dp"
+        android:hint="Nama Lengkap"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/namaText"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tanggal"
+        app:layout_constraintTop_toBottomOf="@id/nama"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:circularflow_radiusInDP="25dp"
+        android:layout_marginTop="25dp"
+        android:hint="Tanggal Lahir"
+        app:startIconDrawable="@drawable/ic_baseline_calendar_today_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tanggalText"
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tanggal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Selanjutnya"
+        android:fontFamily="@font/poppins_black"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="tugas.project.selforder.fragment.FragmentHome"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/order"
+        android:name="tugas.project.selforder.fragment.FragmentOrders"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/payment"
+        android:name="tugas.project.selforder.fragment.FragmentPayment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="tugas.project.selforder.fragment.FragmentProfile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/scan"
+        android:name="tugas.project.selforder.fragment.FragmentScan"
+        android:label="Scan"
+        tools:layout="@layout/fragment_scan" />
+</navigation>
